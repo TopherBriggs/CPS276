@@ -1,1 +1,1 @@
-This is just a test file
+IP Address of Server: 104.131.52.238
