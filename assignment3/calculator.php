@@ -19,7 +19,7 @@ class Calculator{
             case "/":
                 if($num2 == 0)
                 {
-                    return "Cannot divide by zero <br>";
+                    return "Cannot divide by zero<br>";
                 }
                 return "The division of the numbers is ".($num1 / $num2)."<br>";
             default:
