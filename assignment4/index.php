@@ -1,3 +1,13 @@
+<?php
+$output = "";
+if(count($_POST) > 0){
+   require_once 'addNameProc.php';
+   $addName = new AddNamesProc(); 
+   $output = $addName->addClearNames();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +25,7 @@
     <div class="row">
         <h1>Add Names</h1>
     </div>
-    <form method="POST" action="#">
+    <form method="POST" action="index.php">
          <div>
            <input class="btn btn-primary" type="submit" value="Add Names">
            <input class="btn btn-danger" type="reset" value="Clear Names">
@@ -29,7 +39,7 @@
         <div class="row">
             <div class="mb-3">
                 <label for="NamesList" class="form-label">List of Names</label>
-                <textarea name="nameList" class="form-control" id="NamesList" aria-describedby="NamesList" rows="10" style="height: 450px"></textarea>
+                <textarea name="nameList" class="form-control" id="NamesList" aria-describedby="NamesList" rows="10" style="height: 450px"><?php echo $output; ?></textarea>
             </div>
         </div>
     </form>
