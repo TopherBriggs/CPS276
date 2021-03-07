@@ -6,6 +6,12 @@ class AddNamesProc
 
     public function addClearNames()
     {
+        //checks if reset button was pressed, if so returns empty string
+        if(isset($_POST["clearNames"]))
+        {
+            return "";
+        }
+
         $name;
         $listNames = $_POST["nameList"];
         $name = $_POST["name"];

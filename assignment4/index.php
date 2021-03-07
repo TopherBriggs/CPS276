@@ -25,10 +25,10 @@ if(count($_POST) > 0){
     <div class="row">
         <h1>Add Names</h1>
     </div>
-    <form method="POST" action="index.php">
+    <form method="POST" action="#">
          <div>
-           <input class="btn btn-primary" type="submit" value="Add Names">
-           <input class="btn btn-danger" type="reset" value="Clear Names">
+           <input class="btn btn-primary" type="submit" name="addName" value="Add Names" id="AddNames">
+           <input class="btn btn-danger" type="submit" name="clearNames" value="Clear Names" id="ClearNames">
         </div>
         <div class="row">
             <div class="mb-3">
