@@ -20,13 +20,14 @@ require_once "fileUploadProc.php";
         <div class="mb-3">
             <h1>File Upload</h1>
         </div>
-        <form method="POST" action="#" enctype="multipart/form-data">
-            <div class="mb-3">
+        <div class="mb-3">
                 <h6><a href="uploaded.php">Show File List</a></h6>
-            </div>
-            <div class="mb-3">
-                <h6><?php echo $output; ?></h6>
-            </div>
+        </div>
+        <div class="mb-3">
+            <h6><?php echo $output; ?></h6>
+        </div>
+        <form method="POST" action="#" enctype="multipart/form-data">
+            
             <div class="mb-3">
                 <label for="fileName" class="form-label">File Name</label>
                 <input type="text" class="form-control" id="fileName" name="name">

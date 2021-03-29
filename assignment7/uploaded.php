@@ -18,6 +18,9 @@ require_once "listFilesProc.php";
     <div>
         <h1>List Files</h1>
     </div>
+    <div class="mb-3">
+        <h6><a href="index.php">Add File</a></h6>
+    </div>
     <div>
         <?php echo $output; ?>
     </div>
