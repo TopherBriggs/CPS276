@@ -1,14 +1,4 @@
 <?php
-// $data = json_decode($_POST['data']);
-
-// echo $data->name;
-
-// $response = (object)[
-// 	'masterstatus'=>'success',
-// 	'msg'=>$data->name
-// ];
-
-// echo json_encode($response);
 
 require_once "../classes/Pdo_methods.php";
 
