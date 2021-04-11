@@ -38,7 +38,7 @@ $output = $dt->checkSubmit();
             </div>
         </div>
         <div>
-            <input class="btn btn-primary" type="submit" id="addNote" name="addNote" value="Submit">
+            <input class="btn btn-primary" type="submit" id="addNote" name="addNote" value="Add Note">
         </div>
     </form>
     </div>

@@ -27,22 +27,21 @@ $notes = $dt->checkSubmit();
         <div class="row">
             <div class="mb-3">
                 <label for="beginTime" class="form-label">Beginning Date</label>
-                <input type="datetime-local" class="form-control" id="beginTime" name="beginTime">
+                <input type="date" class="form-control" id="beginTime" name="beginTime">
             </div>
         </div>
         <div class="row">
             <div class="mb-3">
                 <label for="endTime" class="form-label">Ending Date</label>
-                <input type="datetime-local" class="form-control" id="endTime" name="endTime">
+                <input type="date" class="form-control" id="endTime" name="endTime">
             </div>
         </div>
-        <div>
+        <div class="mb-3">
             <input class="btn btn-primary" type="submit" id="getNotes" name="getNotes" value="Get Notes">
         </div>
     </form>
-    
-    <div>
-    <?php echo $notes; ?>
+    <div class="row mb-3">
+        <?php echo $notes; ?>
     </div>
 </div>
 </body>

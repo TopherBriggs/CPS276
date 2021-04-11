@@ -38,7 +38,7 @@ class Date_time
     function getNotes()
     {  
         require_once "classes/Pdo_methods.php";
-        $output = '<table class="table table-striped">
+        $output = '<table class="table table-bordered table-striped">
         <thead>
         <tr>
           <th scope="col">Date and Time</th>
