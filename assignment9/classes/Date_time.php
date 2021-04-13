@@ -50,7 +50,7 @@ class Date_time
         $end = strtotime($_POST["endTime"]);
         $pdo = new PdoMethods();
 
-        $sql = "SELECT * FROM notes WHERE timestamp between :low AND :high ORDER BY timestamp;";
+        $sql = "SELECT * FROM notes WHERE timestamp between :low AND :high ORDER BY timestamp DESC;";
         $bindings = [
             [":low",$start,"int"],
             [":high",$end ,"int"]
