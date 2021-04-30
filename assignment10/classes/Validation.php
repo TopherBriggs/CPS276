@@ -24,7 +24,7 @@ class Validation{
 		return $this->setError($match);
 	}
 	private function phone($value){
-		$match = preg_match("/\d{3}\.\d{3}.\d{4}/", $value);
+		$match = preg_match("/^\d{3}\.\d{3}.\d{4}$/", $value);
 		return $this->setError($match);
 	}
 	private function address($value){
@@ -32,7 +32,7 @@ class Validation{
 		return $this->setError($match);
 	}
 	private function city($value){
-		$match = preg_match("/\w+/i", $value);
+		$match = preg_match("/^\w+$/i", $value);
 		return $this->setError($match);
 	}
 	private function email($value){
@@ -40,7 +40,7 @@ class Validation{
 		return $this->setError($match);
 	}
 	private function DOB($value){
-		$match = preg_match("|\d{2}/\d{2}/\d{4}|", $value);
+		$match = preg_match("|^\d{2}/\d{2}/\d{4}$|", $value);
 		return $this->setError($match);
 	}
 	private function setError($match){
