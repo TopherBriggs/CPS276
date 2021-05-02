@@ -32,7 +32,7 @@ class Validation{
 		return $this->setError($match);
 	}
 	private function city($value){
-		$match = preg_match("/^\w*$/i", $value);
+		$match = preg_match("/^\w+$/i", $value);
 		return $this->setError($match);
 	}
 	private function email($value){
