@@ -10,6 +10,9 @@ if(isset($_GET)){
 	}
 	else if($_GET['page'] === "display"){
 		//CODE GOES HERE TO REQUIRE THE DISPLAYRECORDS.PHP PAGE AND CALL WHATEVER METHOD YOU WROTE
+		require_once("php/displayRecords.php");
+
+		$result = init();
 
 	}
 	else {
